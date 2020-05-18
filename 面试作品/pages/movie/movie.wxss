@@ -1,0 +1,26 @@
+/* pages/movie/movie.wxss */
+@import "../template/movies-template/movies-template.wxss";
+@import"../template/more-movies-template/more-movies-template.wxss";
+.search-container{
+  display: flex;
+  flex-direction: row;
+  background-color: gainsboro;
+  height: 70rpx;
+}
+.search-img{
+ margin:auto 0 auto 30rpx;
+ height: 50rpx;
+ width: 50rpx;
+}
+.search-cancel{
+  margin:auto 0 auto 220rpx;
+  height: 30rpx;
+  width: 30rpx;
+}
+.search-input{
+  margin:auto 0 auto 50rpx;
+}
+.search-page{
+  position: absolute;
+  top: 70rpx;
+}

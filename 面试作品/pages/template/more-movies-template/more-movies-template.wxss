@@ -1,0 +1,8 @@
+@import "../one-movie-template/one-movie-template.wxss";
+.whole{
+  height: 1285rpx;
+}
+.container{
+   float: left;
+   margin-left:8rpx;
+}

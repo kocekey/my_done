@@ -1,0 +1,20 @@
+<import src="../template/new-template/new-item-template.wxml" />
+<view>
+	<swiper indicator-dots="true" indicator-color="gray" autoplay="true" interval="2000">
+		<swiper-item>
+			<image catchtap="onbannertap" src="/Images/hero/carouselimg1.jpg" data-id='1'></image>
+		</swiper-item>
+		<swiper-item>
+			<image catchtap="onbannertap" src="/Images/hero/carouselimg2.jpg" data-id='2'></image>
+		</swiper-item>
+		<swiper-item>
+			<image catchtap="onbannertap" src="/Images/hero/carouselimg3.jpg" data-id='3'></image>
+		</swiper-item>
+	</swiper>
+	<block wx:for="{{array}}" wx:for-item="item" wx:key="index" >
+		<view catchtap="onnewtap" data-id="{{item.newid}}">
+			<template is="newitem" data="{{item}}" />
+		</view>
+	</block>
+
+</view>

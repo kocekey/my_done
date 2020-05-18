@@ -1,0 +1,25 @@
+<import src="../template/star-template/star-template.wxml" />
+<view class="detail-container">
+	<image catchtap="checkimgtap" data-img="{{datas[0].movieimg}}" class="detailimg" mode="aspectFill" src="{{datas[0].movieimg}}"></image>
+	<view class="detail">
+		<text class="detail-title">{{datas[0].moviename}}</text>
+		<text class="detail-address">中国·北京</text>
+		<text class="detail-like">87562人喜欢</text>
+		<text class="detail-like">68232条评论</text>
+	</view>
+	<view>
+		<image catchtap="checkimgtap" data-img="{{datas[0].movieimg}}" class="detail-img" mode="aspectFit" src="{{datas[0].movieimg}}"></image>
+	</view>
+	<view class="detail-data">
+		<text class="detail-title-title">{{datas[0].moviename}}</text>
+		<view class="detail-row"><text class="detail-score">评分</text><template is="startemplate" data="{{moviescorearray:datas[0].moviescorearray,moviescore:datas[0].moviescore}}" /></view>
+		<view class="detail-row"><text class="detail-score">导演</text><text>刘镇伟</text></view>
+		<view class="detail-row"><text class="detail-score">影人</text><text>周星驰/吴孟达/朱茵/蔡少芬</text></view>
+		<view class="detail-row"><text class="detail-score">类型</text><text>动作、冒险、喜剧</text></view>
+	</view>
+	<view class="hr"></view>
+	<view class="detail-summary">
+    <text class="detail-summary-data">剧情简介</text>
+    <text class="detail-summary-area">紫霞和青霞原是佛祖缠在一起的灯芯，两人前世斗争激烈。紫霞夺走了至尊宝的月光宝盒，又在他的脚上印下了3颗痣。紫霞要至尊宝带她走，牛魔王要纳紫霞为妾，而牛的妹妹牛香香也要嫁至尊宝，一时乱作一团。铁扇公主也赶来和牛魔王杀在一起。牛魔王擒回紫霞逼迫她与他成亲，被绑在一旁的唐僧流下了同情的泪水。至尊宝拿起金箍套在头上，他便不再是凡人了。孙悟空驾云来到牛府，要救唐僧一行去西天取经。</text>
+	</view>
+</view>

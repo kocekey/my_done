@@ -1,0 +1,5 @@
+<import src="../template/more-movies-template/more-movies-template.wxml" />
+<view>
+<template is="moremovietemplate" data="{{datas}}">
+</template>
+</view>

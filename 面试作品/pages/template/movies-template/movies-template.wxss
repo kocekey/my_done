@@ -1,0 +1,28 @@
+@import "../one-movie-template/one-movie-template.wxss";
+.movies{
+  border-bottom: 15px solid #f2f2f2;
+}
+.movies-container{
+    display: flex;
+    flex-direction: column;
+}
+.movies-top{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin:20rpx 20rpx 20rpx 20rpx;
+}
+.movies-more{
+  color: deepskyblue;
+}
+.movies-more-img{
+  color: deepskyblue;
+  height: 20rpx;
+  width: 20rpx;
+}
+.movies-movie{
+  display: flex;
+  flex-direction:row;
+  justify-content: space-between;
+  margin:0 20rpx;
+}

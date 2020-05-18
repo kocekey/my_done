@@ -1,0 +1,70 @@
+.new-container{
+  display: flex;
+  flex-direction: column;
+  margin-top: 10rpx;
+  margin-bottom: 40rpx;
+  background-color: #fff;
+  border-top:1px solid #ededed;
+  border-bottom:1px solid #ededed;
+  padding-bottom: 10rpx;
+}
+.new-author-data{
+  display: flex;
+  flex-direction: row;
+  /* flex盒子模型垂直居中 */
+  align-items: center;
+  margin-top: 10rpx;
+  margin-bottom: 20rpx;
+  margin-left: 10rpx;
+}
+.new-author-img{
+  height: 50rpx;
+  width: 50rpx;
+  border-radius: 50px;
+}
+.new-date{
+  margin-left: 20rpx;
+  /* 垂直居中 */
+  /* vertical-align: middle; */
+  font-size: 26rpx;
+}
+.new-title-title{
+ text-align: center;
+ margin-bottom: 20rpx;
+}
+.new-title{
+ font-size: 30rpx;
+ font-weight: 600;
+ margin-bottom: 10rpx;
+ margin-left: 10rpx;
+ color: #333;
+}
+.new-text-img{
+ width: 100%;
+ height: 340rpx;
+ margin-bottom: 15px;
+}
+.new-text{
+ font-size: 28rpx;
+ color: #666;
+ letter-spacing: 1rpx;
+ margin-left: 20rpx;
+ margin-bottom: 20rpx;
+}
+.new-like{
+ display: flex;
+ flex-direction: row;
+ align-items:center;
+ font-size: 26rpx;
+ margin-left: 20rpx;
+
+}
+.new-like-img{
+ height: 32rpx;
+ width: 32rpx;
+ margin-right: 16rpx;
+
+}
+.new-like-num{
+ margin-right: 30rpx;
+}

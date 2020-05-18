@@ -1,0 +1,19 @@
+<template name="newitem">
+	<view class="new-container">
+		<view class="new-author-data">
+			<image class="new-author-img" src="{{item.avatarimg}}"></image>
+			<text class="new-date">{{item.date}}</text>
+		</view>
+		<view class="new-title-title">
+			<text class="new-title">{{item.title}}</text>
+		</view>
+		<image class="new-text-img" src="{{item.imgSrc}}"></image>
+		<text class="new-text">{{item.content}}</text>
+		<view class="new-like">
+			<image class="new-like-img" src="../../Images/icon/65573be8b208922.jpg"></image>
+			<text class="new-like-num">{{item.reading}}</text>
+			<image class="new-like-img" src="../../Images/icon/8a13e8a209a14913bc037d08eba76aedd7facd376378-ofVzbU_fw658.jpg"></image>
+			<text class="new-like-num">{{item.collection}}</text>
+		</view>
+	</view>
+	</template>

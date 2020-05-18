@@ -1,0 +1,18 @@
+<view class="container">
+	<image class="new-detail-img" src="{{newdetaildata.imgSrc}}"></image>
+	<view class="avatar-data">
+		<image class="new-detail-head" src="{{newdetaildata.avatarimg}}"></image>
+		<text class="avatar">{{newdetaildata.author}}</text>
+		<text class="before-time">{{newdetaildata.datetime}}</text>
+	</view>
+	<text class="new-detail-title">{{newdetaildata.title}}</text>
+	<view class="new-detail-tool">
+		<view class="new-detail-tool-img">
+			<image wx:if="{{collected}}" catchtap="onincollectiontap" class="new-detail-collection-img" src="/Images/icon/collected.png"></image>
+			<image wx:else catchtap="oncollectiontap" class="new-detail-collection-img" src="/Images/icon/incollected.png"></image>
+			<image catchtap="onsharetap" class="new-detail-share-img" src="/Images/icon/share.jpg"></image>
+		</view>
+    <view class="horizon"></view>
+	</view>
+    <text class="new-detail-text">{{newdetaildata.content}}</text>
+</view>

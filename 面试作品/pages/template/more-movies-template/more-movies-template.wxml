@@ -1,0 +1,10 @@
+<import src="../one-movie-template/one-movie-template.wxml" />
+<template name="moremovietemplate">
+	<view class="whole">
+		<block wx:for="{{datas}}" wx:for-item="item" wx:key="index">
+			<view class="container">
+				<template is="onemovietemplate" data="{{...item}}"></template>
+			</view>
+		</block>
+	</view>
+</template>

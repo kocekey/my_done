@@ -1,0 +1,8 @@
+<import src="../star-template/star-template.wxml"/>
+<template name="onemovietemplate">
+  <view catchtap="ondetailtap" data-id="{{movieid}}" class="movie-container">
+    <image class="onemovie" src="{{movieimg}}"></image>
+    <text class="movie-text">{{moviename}}</text>
+    <template is="startemplate" data="{{moviescorearray:moviescorearray,moviescore:moviescore}}"/>
+  </view>
+</template>

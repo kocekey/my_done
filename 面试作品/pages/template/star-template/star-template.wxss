@@ -1,0 +1,19 @@
+.star-containar{
+  display: flex;
+  flex-direction: row;
+}
+.star-imgs{
+  display: flex;
+  flex-direction: row;
+  height: 20rpx;
+  margin-right: 24rpx;
+}
+.star-img{
+  margin-top: 10rpx;
+  height: 20rpx;
+  width: 20rpx;
+  padding-left: 3rpx;
+}
+.star-text{
+  color:#999;
+}

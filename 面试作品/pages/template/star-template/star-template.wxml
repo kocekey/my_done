@@ -1,0 +1,11 @@
+<template name="startemplate">
+	<view class="star-containar">
+		<view class="star-imgs">
+			<block wx:for="{{moviescorearray}}" wx:for-item="i" wx:key="key">
+				<image wx:if="{{i}}" class="star-img" src="/Images/icon/star.png"></image>
+				<image wx:else class="star-img" src="/Images/icon/instar.png"> </image>
+			</block>
+		</view>
+		<text class="star-text">{{moviescore}}.0</text>
+	</view>
+</template>

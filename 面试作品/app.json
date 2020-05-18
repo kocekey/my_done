@@ -1,0 +1,32 @@
+{
+  "pages": [
+    "pages/movie/movie",
+    "pages/New/New",
+    "pages/New/new-detail/new-detail",
+    "pages/more-movie/more-movie",
+    "pages/detail-movie/detail-movie"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#b3d4db",
+    "navigationBarTitleText": "",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar":{
+    "borderStyle":"white",
+    "list":[{
+      "pagePath":"pages/New/New",
+      "text":"新闻",
+      "iconPath":"/Images/icon/new.png",
+      "selectedIconPath":"/Images/icon/newed.png"
+    },
+  {
+    "pagePath":"pages/movie/movie",
+    "text":"电影",
+    "iconPath":"/Images/icon/movie.png",
+    "selectedIconPath":"/Images/icon/movieed.png"
+  }]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

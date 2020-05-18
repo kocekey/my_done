@@ -1,0 +1,16 @@
+@import "../star-template/star-template.wxss";
+.movie-container{
+  display: flex;
+  flex-direction: column;
+  padding:15rpx 10rpx;
+}
+.onemovie{
+  height:300rpx;
+  width: 220rpx;
+  padding-bottom: 20rpx;
+}
+.movie-text{
+  font-size: 30rpx;
+  font-weight: 500;
+  color: #666;
+}

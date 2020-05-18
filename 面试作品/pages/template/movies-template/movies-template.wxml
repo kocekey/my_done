@@ -1,0 +1,19 @@
+<import src="../one-movie-template/one-movie-template.wxml" />
+<template name="moviestemplate">
+<view class="movies">
+	<view class="movies-container">
+		<view class="movies-top">
+			<text class="movies-ing">{{movietype}}</text>
+			<view>
+				<text catchtap="onmoretap" data-type="{{movietype}}" class="movies-more">更多</text>
+				<image class="movies-more-img" src="/Images/icon/more.png"></image>
+			</view>
+		</view>
+	</view>
+	<view class="movies-movie">
+<block wx:for="{{datas}}" wx:for-item="item" wx:for-index="index" wx:key="key">
+		<template is="onemovietemplate" data="{{...item}}" />
+</block>
+	</view>
+</view>
+</template>

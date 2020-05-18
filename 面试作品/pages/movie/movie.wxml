@@ -1,0 +1,16 @@
+<import src="../template/movies-template/movies-template.wxml" />
+<import src="../template/more-movies-template/more-movies-template.wxml" />
+<view  class="movies-container">
+   <view class="search-container">
+	  <icon class="search-img" type="search"></icon>
+		<input value="{{inputvalue}}" type="text" bindconfirm="onbindconfirm" bindfocus="onbindfocus" class="search-input" placeholder="肖申克的救赎、7"></input>
+		<image wx:if="{{cancelshow}}" catchtap="cancelontap" class="search-cancel" src="/Images/icon/cancel.png"></image>
+		</view>
+		<view wx:if="{{containershow}}">
+	<template is="moviestemplate" data="{{...hoting}}" />
+	<template is="moviestemplate" data="{{...score}}"/>
+	</view>
+</view>
+<view wx:if="{{searchpanelshow}}" class="search-page">
+<template  is='moremovietemplate' data="{{...searchresult}}"></template>
+</view>
